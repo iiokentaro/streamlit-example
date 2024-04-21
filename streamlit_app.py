@@ -3,7 +3,7 @@ from io import BytesIO, StringIO
 from pypdf import PdfReader, PdfWriter
 from datetime import datetime
 
-"""g
+"""
 # 🖨 PDF Splitter 💔
 
 [🇯🇵 PDF分割] 両面印刷オプションが無いプリンターでも簡単に手動裏表印刷ができるよう、PDFを奇数ページと偶数ページに分割しま (パスワード付きのPDFには対応していません)。
