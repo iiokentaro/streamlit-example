@@ -10,11 +10,6 @@ st.set_page_config(
     page_icon="favicon/favicon.ico"
 )
 
-"""
-# 🖨 PDF Splitter 💔
-
-:coffee: [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-blue)](https://buymeacoffee.com/iiokentaro)
-"""
 
 # descriptions = """
 # [🇯🇵 PDF分割] 両面印刷オプションが無いプリンターでも簡単に手動裏表印刷ができるよう、PDFを奇数ページと偶数ページに分割します (パスワード付きのPDFには未対応です)。
@@ -98,47 +93,47 @@ def get_utc_time_in_string(use_colon=False):
 
 
 if __name__ == '__main__':
-    tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10 = st.tabs(["🇯🇵", "🇬🇧", "🇨🇳", "🇮🇳", "🇪🇸", "🇪🇬", "🇷🇺", "🇫🇷", "🇭🇷", "🇬🇪"])
+    tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs(["🇯🇵", "🇬🇧", "🇨🇳", "🇮🇳", "🇪🇸", "🇪🇬", "🇷🇺", "🇭🇷", "🇬🇪"])
 
     with tab1:
-        st.header("PDF分割")
+        st.header("🖨 PDF分割 💔")
         st.write("両面印刷オプションが無いプリンターでも簡単に手動裏表印刷ができるよう、PDFを奇数ページと偶数ページに分割します (パスワード付きのPDFには対応していません)。 ")
 
     with tab2:
-        st.header("PDF Splitter")
+        st.header("🖨 PDF Splitter 💔")
         st.write("Split a PDF into odd and even pages so that you can manually print both sides on printers without a duplex option (for example, my Canon PIXMA G3470...).")
 
     with tab3:
-        st.header("PDF分割器")
+        st.header("🖨 PDF分割器 💔")
         st.write("将 PDF 拆分为奇数页和偶数页，以便您可以在没有双面选项的打印机上手动打印两面（例如，我的 Canon PIXMA G3470...）。")
     
     with tab4:
-        st.header("PDF विभाजक")
+        st.header("🖨 PDF विभाजक 💔")
         st.write("PDF को विषम और सम पृष्ठों में विभाजित करें ताकि आप डुप्लेक्स विकल्प के बिना प्रिंटर पर दोनों ओर मुद्रण कर सकें (उदाहरण के लिए, मेरा Canon PIXMA G3470...).")
 
     with tab5:
-        st.header("Separador de PDF")
+        st.header("🖨 Separador de PDF 💔")
         st.write("Divida un PDF en páginas pares e impares para poder imprimir manualmente ambas caras en impresoras sin opción dúplex (por ejemplo, mi Canon PIXMA G3470...).")
 
     with tab6:
-        st.header("فاصل PDF")
+        st.header("💔 فاصل PDF 🖨")
         st.write("قم بتقسيم ملف PDF إلى صفحات فردية وزوجية بحيث يمكنك طباعة الوجهين يدويًا على الطابعات دون خيار الطباعة على الوجهين (على سبيل المثال، Canon PIXMA G3470...).")
 
     with tab7:
-        st.header("Разделитель PDF-файлов")
+        st.header("🖨 Разделитель PDF-файлов💔 ")
         st.write("Разделите PDF-файл на нечетные и четные страницы, чтобы вручную распечатать обе стороны на принтерах без функции двусторонней печати (например, на моем Canon PIXMA G3470...).")
 
     with tab8:
-        st.header("Séparateur PDF")
-        st.write("Divisez un PDF en pages paires et impaires afin de pouvoir imprimer manuellement les deux faces sur des imprimantes sans option recto verso (par exemple, mon Canon PIXMA G3470...).")
-
-    with tab9:
-        st.header("PDF Razdjelnik")
+        st.header("🖨 PDF Razdjelnik 💔")
         st.write("Podijelite PDF na neparne i parne stranice tako da možete ručno ispisivati obje strane na pisačima bez opcije obostranog ispisa (na primjer, moj Canon PIXMA G3470...).")
 
-    with tab10:
-        st.header("PDF სპლიტერი")
+    with tab9:
+        st.header("🖨 PDF სპლიტერი 💔")
         st.write("დაყავით PDF კენტ და ლუწ გვერდებად, რათა ხელით შეძლოთ ორივე მხარის დაბეჭდვა პრინტერებზე დუპლექსის გარეშე (მაგალითად, ჩემი Canon PIXMA G3470...).")
+
+    """
+    :coffee: [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-blue)](https://buymeacoffee.com/iiokentaro)
+    """
    
     uploaded_file = st.file_uploader("Choose a file", type=["pdf"], accept_multiple_files=False)
 
