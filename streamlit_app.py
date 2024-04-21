@@ -3,6 +3,7 @@ from io import BytesIO, StringIO
 from pypdf import PdfReader, PdfWriter
 from datetime import datetime
 
+
 # Set the page configuration (this has to be written at the top of the script)
 st.set_page_config(
     page_title='PDF Splitter',
@@ -12,6 +13,10 @@ st.set_page_config(
 """
 # 🖨 PDF Splitter 💔
 
+:coffee: [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-blue)](https://buymeacoffee.com/iiokentaro)
+"""
+
+descriptions = """
 [🇯🇵 PDF分割] 両面印刷オプションが無いプリンターでも簡単に手動裏表印刷ができるよう、PDFを奇数ページと偶数ページに分割します (パスワード付きのPDFには対応していません)。
 
 [🇬🇧 PDF Splitter] Split a PDF into odd and even pages so that you can manually print both sides on printers without a duplex option (for example, my Canon PIXMA G3470...).
@@ -27,8 +32,6 @@ st.set_page_config(
 [🇭🇷 PDF Razdjelnik] Podijelite PDF na neparne i parne stranice tako da možete ručno ispisivati obje strane na pisačima bez opcije obostranog ispisa (na primjer, moj Canon PIXMA G3470...).
 
 [🇬🇪 PDF სპლიტერი] დაყავით PDF კენტ და ლუწ გვერდებად, რათა ხელით შეძლოთ ორივე მხარის დაბეჭდვა პრინტერებზე დუპლექსის გარეშე (მაგალითად, ჩემი Canon PIXMA G3470...).
-
-:coffee: [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-blue)](https://buymeacoffee.com/iiokentaro)
 
 """
 
@@ -95,8 +98,10 @@ def get_utc_time_in_string(use_colon=False):
 
 
 if __name__ == '__main__':
-    
+
     uploaded_file = st.file_uploader("Choose a file", type=["pdf", "PDF"], accept_multiple_files=False)
+
+    descriptions
 
     if uploaded_file is not None:
         if uploaded_file.type == "application/pdf":
