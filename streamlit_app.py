@@ -6,7 +6,7 @@ from datetime import datetime
 """
 # 🖨 PDF Splitter 💔
 
-[🇯🇵 PDF分割] 両面印刷オプションが無いプリンターでも簡単に手動裏表印刷ができるよう、PDFを奇数ページと偶数ページに分割しま (パスワード付きのPDFには対応していません)。
+[🇯🇵 PDF分割] 両面印刷オプションが無いプリンターでも簡単に手動裏表印刷ができるよう、PDFを奇数ページと偶数ページに分割します (パスワード付きのPDFには対応していません)。
 
 [🇬🇧 PDF Splitter] Split a PDF into odd and even pages so that you can manually print both sides on printers without a duplex option (for example, my Canon PIXMA G3470...).
 
