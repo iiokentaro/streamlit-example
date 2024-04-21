@@ -3,6 +3,12 @@ from io import BytesIO, StringIO
 from pypdf import PdfReader, PdfWriter
 from datetime import datetime
 
+# Set the page configuration (this has to be written at the top of the script)
+st.set_page_config(
+    page_title='PDF Splitter',
+    page_icon="favicon/favicon.ico"
+)
+
 """
 # 🖨 PDF Splitter 💔
 
@@ -89,7 +95,7 @@ def get_utc_time_in_string(use_colon=False):
 
 
 if __name__ == '__main__':
-
+    
     uploaded_file = st.file_uploader("Choose a file", type=["pdf", "PDF"], accept_multiple_files=False)
 
     if uploaded_file is not None:
